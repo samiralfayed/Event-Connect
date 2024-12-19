@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Event Connect</h1>
+    </header>
+    <main>
+        <form id="event-form">
+            <input type="text" name="title" placeholder="Event Title" required />
+            <textarea name="description" placeholder="Event Description" required></textarea>
+            <input type="date" name="date" required />
+            <input type="time" name="time" required />
+            <input type="text" name="location" placeholder="Location" required />
+            <input type="text" name="organizer" placeholder="Organizer" required />
+            <button type="submit">Create Event</button>
+        </form>
+
+        <h2 style="text-align:center; color: #333;">Upcoming Events</h2>
+        <ul id="event-list"></ul>
+    </main>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
